@@ -21,7 +21,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import jsyaml from 'js-yaml';
 
-const SITE = 'https://shihangvicwei.github.io/portfolio/';
+const SITE = 'https://shihangvicwei.github.io/';
 const ROOT = new URL('..', import.meta.url).pathname;
 const DIST = join(ROOT, 'dist');
 const CONTENT = join(ROOT, 'public', 'content');

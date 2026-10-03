@@ -1,0 +1,6 @@
+# Crawlers read robots.txt only from the domain root. This file works because
+# the site is served from https://shihangvicwei.github.io/ itself.
+User-agent: *
+Allow: /
+
+Sitemap: https://shihangvicwei.github.io/sitemap.xml
