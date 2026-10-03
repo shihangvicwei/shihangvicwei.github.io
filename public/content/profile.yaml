@@ -46,7 +46,7 @@ bioParagraphs:
 # Sidebar "Currently" block (label/value pairs)
 currently:
   - label: Working on
-    value: Human 3D reconstruction
+    value: 4DGS streaming
   - label: Based in
     value: West Lafayette, IN
 
