@@ -140,6 +140,16 @@ const rootDiv = /<div id="root">\s*<\/div>/;
 if (!rootDiv.test(html)) {
   throw new Error('prerender: could not find an empty <div id="root"></div> in dist/index.html');
 }
+// The search-result headline comes from <title> (and og/twitter titles for link
+// previews). Take it from profile.yaml so editing siteTitle there is enough;
+// otherwise the hardcoded copy in index.html would silently win for crawlers.
+if (profile.siteTitle) {
+  const t = esc(profile.siteTitle);
+  html = html
+    .replace(/<title>[^<]*<\/title>/, `<title>${t}</title>`)
+    .replace(/(<meta property="og:title" content=")[^"]*/, `$1${t}`)
+    .replace(/(<meta name="twitter:title" content=")[^"]*/, `$1${t}`);
+}
 html = html
   .replace('</head>', `${style}\n</head>`)
   .replace(rootDiv, `<div id="root">${parts.join('\n')}</div>`);

@@ -29,8 +29,8 @@ export default function App() {
   };
 
   useEffect(() => {
-    document.title = `${profile.name} — ${profile.title}, ${profile.institution}`;
-  }, [profile.name, profile.title, profile.institution]);
+    document.title = profile.siteTitle || `${profile.name} — ${profile.title}, ${profile.institution}`;
+  }, [profile.siteTitle, profile.name, profile.title, profile.institution]);
 
   useEffect(() => {
     const onHash = () => {

@@ -10,6 +10,9 @@ title: PhD Student
 institution: Purdue University
 institutionShort: Purdue
 field: Computer Vision
+# Page title: shown on the browser tab and as the headline of the search result
+# when people find this site on Google (and in link previews when shared).
+siteTitle: "Shihang Wei | Portfolio"
 # Footer copyright "© <year> <name>" and "Last updated <month year>" are generated
 # automatically from the last git commit date (see vite.config.js) — nothing to edit.
 
