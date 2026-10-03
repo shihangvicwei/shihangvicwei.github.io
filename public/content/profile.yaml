@@ -29,7 +29,7 @@ instagram: https://www.instagram.com/vicccww/
 
 # Lede on the About/home page (the headline above your bio)
 # Use *italic* markers to wrap the emphasized phrase. Plain text otherwise.
-lede: "I reconstruct *people and scenes in 3D* from images."
+lede: "I build *fast, compact 4D reconstructions* of the dynamic world."
 
 # Bio paragraphs shown below the lede on the About/home page.
 # A blank line inside one entry starts a new paragraph; you can also use one
@@ -40,7 +40,7 @@ bioParagraphs:
   quality and reducing the model storage size, whether through feed-forward methods, per-scene optimization, or hybrid 
   systems.
   
-  I also love photography and hiking, check out my instagram to see my lastest work.
+  I also love photography and hiking, check out my Instagram to see my latest work.
   "
 
 # Sidebar "Currently" block (label/value pairs)
