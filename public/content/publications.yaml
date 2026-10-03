@@ -5,6 +5,9 @@
 # Optional: type (conference|workshop|journal|preprint), selected (true/false),
 #           award: short text shown as a gold badge next to "Selected"
 #                  (e.g. "Best Paper Award", "Oral", "Best Paper Candidate"),
+#           equal: authors who contributed equally, spelled exactly as in
+#                  `authors` (e.g. ["${name}", "Mingjian Li"]). Each gets a *
+#                  after their name and a "* Equal contribution" note is shown.
 #           links: [{ label, icon, url }],
 #           teaser: path to a teaser image (4:3 crops best). Put the file in
 #                   public/assets/papers/ and reference it WITHOUT the "public/"
@@ -39,6 +42,7 @@
   teaser: assets/papers/p1.jpg   # optional 4:3 teaser image (file goes in public/assets/papers/)
   title: "DanceNet3D: A 3D Dance Dataset with Multi-View Videos and 3DGS Reconstructions"
   authors: ["Shihang Wei", "Mingjian Li", "Ran Gong", "Yueyu Hu", "Yao Wang"]
+  equal: ["Shihang Wei", "Mingjian Li"]
   description: "A synchronized multi-view dance dataset captured with 29 cameras, comprising 47 sequences and over 35,000 frames of diverse dance styles by 4 professional dancers that releases high quality per frame 3DGS reconstructions"
   # Citation copied by the "BibTeX" button. Edit freely — this is the source of truth.
   bibtex: |

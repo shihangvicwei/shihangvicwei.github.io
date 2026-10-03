@@ -84,7 +84,11 @@ for (const p of paragraphs) parts.push(`<p>${inline(p)}</p>`);
 if (pubs.length) {
   parts.push('<h2>Publications</h2><ul>');
   for (const p of pubs) {
-    const authors = (p.authors || []).map((a) => interp(a, vars)).join(', ');
+    const equal = (p.equal || []).map((a) => interp(a, vars));
+    const authors = (p.authors || [])
+      .map((a) => interp(a, vars))
+      .map((a) => (equal.includes(a) ? `${a}*` : a))
+      .join(', ') + (equal.length ? ' (* equal contribution)' : '');
     parts.push(
       `<li><cite>${esc(interp(p.title, vars))}</cite>` +
         (authors ? `. ${esc(authors)}` : '') +

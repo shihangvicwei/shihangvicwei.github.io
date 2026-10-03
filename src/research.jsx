@@ -58,9 +58,11 @@ export default function ResearchPage() {
                     {p.authors.map((a, idx) => (
                       <span key={idx}>
                         <span className={a === profile.name ? 'me' : ''}>{a}</span>
+                        {(p.equal || []).includes(a) && <sup className="pub-equal">*</sup>}
                         {idx < p.authors.length - 1 ? ', ' : ''}
                       </span>
                     ))}
+                    {(p.equal || []).length > 0 && <span className="pub-equal-note">* Equal contribution</span>}
                   </p>
                   <p className="pub-desc">{p.description}</p>
                   <div className="pub-links">
