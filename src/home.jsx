@@ -32,6 +32,7 @@ export default function HomePage({ go }) {
         <div className="profile-links">
           <EmailLink className="plink" title="Email"><Icon.mail width="18" height="18" /></EmailLink>
           <a className="plink" title="Google Scholar" href={profile.scholar} target="_blank" rel="noopener noreferrer"><Icon.scholar width="18" height="18" /></a>
+          {profile.orcid && <a className="plink" title="ORCID" href={profile.orcid} target="_blank" rel="noopener noreferrer"><Icon.orcid width="18" height="18" /></a>}
           <a className="plink" title="GitHub" href={profile.github} target="_blank" rel="noopener noreferrer"><Icon.github width="18" height="18" /></a>
           <a className="plink" title="LinkedIn" href={profile.linkedin} target="_blank" rel="noopener noreferrer"><Icon.linkedin width="18" height="18" /></a>
           <a className="plink" title="Instagram" href={profile.instagram} target="_blank" rel="noopener noreferrer"><Icon.instagram width="18" height="18" /></a>

@@ -65,7 +65,7 @@ const paragraphs = (Array.isArray(profile.bioParagraphs) ? profile.bioParagraphs
   .map(tidy)
   .filter(Boolean);
 
-const socials = [profile.scholar, profile.github, profile.linkedin, profile.instagram]
+const socials = [profile.scholar, profile.orcid, profile.github, profile.linkedin, profile.instagram]
   .filter((u) => u && u !== '#');
 
 const parts = [];
